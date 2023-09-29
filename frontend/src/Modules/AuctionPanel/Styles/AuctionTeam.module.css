@@ -1,0 +1,18 @@
+.teamsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.teamsContainer a {
+  text-decoration: none;
+}
+@media only screen and (max-width: 480px) {
+  .teamsContainer {
+    flex-direction: column;
+  }
+  .auctionName {
+    font-size: 30px;
+  }
+}

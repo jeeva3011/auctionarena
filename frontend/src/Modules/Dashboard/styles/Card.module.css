@@ -1,0 +1,33 @@
+.cardContainer {
+  background-color: #81EE93;
+  position: relative;
+  width: 240px;
+  height: 15vh;
+  font-size: 20px;
+  border: 1px black solid;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+.cardContainer:hover {
+  transition: all 0.3s ease-out;
+  transform: scale(1.02);
+  box-shadow: 0 2px 5px 2px #3c896d;
+}
+.cardContainer h4 {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 500px) {
+  .cardContainer{
+    width: 80%;
+          
+  }
+}
+

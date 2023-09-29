@@ -1,0 +1,170 @@
+.CreateAuctionContainer {
+  flex: 3;
+  justify-content: center;
+  overflow: scroll;
+  padding: 10px;
+}
+.validate{
+  font-size: small;
+  color: red;
+}
+.formContainer {
+  display: flex;
+  gap: 20px;
+  flex: 2;
+  height: auto;
+  justify-content: space-around;
+  box-shadow: 0 0 5px #000;
+  border-radius: 20px;
+  width: 80%;
+  margin: auto;
+}
+.header {
+  margin-left: 15px;
+}
+.formControl {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+.formControl input {
+  width: 90%;
+  height: 5vh;
+}
+.formControl input:focus {
+  outline: none;
+}
+.formControl select {
+  height: 6vh;
+  width: 92%;
+}
+.formControl input[type="date"]::placeholder {
+  visibility: hidden;
+}
+.avatar {
+  width: 50px;
+  height: 50px;
+}
+.right {
+  position: relative;
+  transition: .5s all;
+ 
+  flex: 1;
+/*   
+  overflow: hidden; */
+
+}
+.right input{
+  width: 370px;
+}
+.selectCategory{
+  width: 380px;
+}
+.selectCategory:active{
+  outline: none;
+}
+.selectCategory .css-12i8g10-Menu {
+  display: none; 
+}
+.right:hover {
+  padding: 10px;
+  box-shadow: inset 100vh 0 0 0 #71e1b62f;
+  background-position: left;
+ 
+}
+.insideRight{
+  position: relative;
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+
+}
+.insideLeft{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-around;
+}
+.left {
+  transition: .5s all;
+  flex: 1;
+}
+.left:hover {
+  
+  padding: 10px;
+  box-shadow: inset 100vh 0 0 0 #71e1b62f;
+  background-position: right;
+}
+.formControl .auctionBtn {
+  width: 40%;
+  margin: auto;
+  height: 6vh;
+  background-color: #fff;
+  border: 1px #51be94 solid;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.formControl .auctionBtn:hover {
+  box-shadow: 0px 0px 10px 5px #63d3a6;
+}
+.avatarContainer{
+    transition: 2s all;
+}
+.avatarImage {
+  width: 100px;
+  height: 100px;
+  border: #3c896d 5px solid;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: .3s;
+  
+  
+}
+.formControl .dateContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.avatarImage:hover {
+  content: url("../../assets/up.svg"); 
+  box-shadow: 0px 0px 10px 5px #63d3a6;
+}
+.disableHover:hover {
+  content: none; 
+  box-shadow: none;
+  cursor: not-allowed;
+}
+.avatarContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.avatarContainer input[type="file"] {
+  display: none;
+}
+
+.selectContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.categoryField{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.buttons{
+  display: flex;
+  justify-content: space-evenly;
+}
+.inputField{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}

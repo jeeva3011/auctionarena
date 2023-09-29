@@ -1,0 +1,50 @@
+.clientcontainer{
+    height: 50vh;
+    width: 95%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.258);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.header{
+    width: 100%;
+    font-size: 35px;
+    color: #3c896d;
+    text-align: center;
+    gap: 0px;
+}
+.client{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 50px;
+    transition: all 0.25s ease-in;
+}
+
+.client img{
+    width: 150px;
+    height: 120px;
+    opacity: 60%;
+    transition: 1s;
+}
+
+.client img:hover{
+    opacity: 100%;
+}
+
+@media only screen and (max-width:950px){
+    .clientcontainer{
+        height: auto;
+        padding-bottom: 20px;
+    }
+    .client{
+        flex-direction: column;
+    }
+    .client img{
+        width: 250px;
+        height: 120px;
+    }
+}

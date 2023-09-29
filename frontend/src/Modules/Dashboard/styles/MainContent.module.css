@@ -1,0 +1,42 @@
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+  font-weight: bold;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  flex: 4;
+  overflow: auto;
+}
+.content a{
+  text-decoration: none;
+  color: #000;
+}
+.image {
+  width: 45px;
+  height: 45px;
+  opacity: 50%;
+  margin-top: 12px;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+}
+.image:hover{
+  transition: 0.3s;
+  transform: scale(1.23);
+}
+@media only screen and (max-width: 500px) {
+  .content {
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    /* align-items: center; */
+    
+  }
+  .container{
+    flex:5;
+  }
+}
+

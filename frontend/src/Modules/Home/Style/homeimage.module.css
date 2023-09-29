@@ -1,0 +1,67 @@
+.homeimage{
+    display: flex;
+    width: 95%;
+    height: 60vh;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    background-color: white;
+    /* margin-top: 18vh; */
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.content img{
+    height: 90%;
+    width: 70%;
+}
+
+.imagecontainer{
+    position: relative;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image{
+    height: 90%;
+    width: 60%;
+}
+
+.dotscontainer button{
+    height: 10px;
+    width: 3px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.activebutton{
+    background-color: black;
+}
+
+.dotscontainer{
+    position: absolute;
+    display: flex;
+    bottom: 10px;
+    justify-content: center;
+    gap: 5px;
+}
+
+@media only screen and (max-width:950px) {
+    .homeimage{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+    .content img{
+        height: 95%;
+        width: 90%;
+    }
+    .image{
+        height: 85%;
+        width: 80%;
+    }
+}

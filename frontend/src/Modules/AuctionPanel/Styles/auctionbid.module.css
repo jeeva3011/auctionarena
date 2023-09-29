@@ -1,0 +1,392 @@
+.auctionbid{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90vh;
+    width: 100%;
+}
+
+.letstartbid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.auctionbid button{
+    background-color: #3c896da8;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 3px white;
+    cursor: pointer;
+    color: white;
+}
+.stamp {
+    transform: translate(-50%, -50%) rotate(12deg);
+      color: #555;
+      font-size: 3rem;
+      font-weight: 700;
+      border: 0.25rem solid #555;
+      padding: 0.25rem 1rem;
+      text-transform: uppercase;
+      border-radius: 1rem;
+      font-family: 'Courier', monospace;
+      -webkit-mask-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/8399/grunge.png');
+    -webkit-mask-size: 944px 604px;
+    mix-blend-mode: multiply;
+    position: absolute;
+    top: 20%;
+    z-index: 100;
+  }
+
+  
+.nope {
+    color: #D23;
+    border: 0.5rem double #D23;
+    transform: rotate(3deg);
+      -webkit-mask-position: 2rem 3rem;
+    font-size: 2rem;  
+  }
+  
+  .approved {
+      color: #0A9928;
+      border: 0.5rem solid #0A9928;
+      -webkit-mask-position: 13rem 6rem;
+      transform: rotate(-14deg);
+    border-radius: 0;
+  } 
+  
+.header{
+    text-align: center;
+    line-height: 5px;
+    /* padding: 10px; */
+    color: #3c896d;
+    margin: auto;
+}
+.auctionName{
+    text-transform: uppercase;
+    font-size: 40px;
+    text-shadow: 2px 2px 8px #b3b3b3;
+    transition: .5s;
+    text-align: center;
+}
+
+.bidcontainer{
+    /* position: fixed;
+    bottom: 0px; */
+    background-color: #3C896D;
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.playersearch{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.playersearch select{
+    height: 50%;
+    width: 40%;
+}
+
+.playersearch button{
+    height: 50%;
+    width: 30%;
+}
+
+.playersearch p{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.teamcontainer{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 2s ease-in;
+}
+
+.teamcontainer button{
+    width: auto;
+    height: 30px;
+}
+
+.teamcontainer button:hover{
+    background-color:#bdc6c384 !important;
+    transform: scale(1.2);
+}
+
+.bidbutton{
+    height: 100%;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.bidbutton button{
+    height: 50%;
+    width: 40%;
+}
+
+.bidplayer{
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.playercard{
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.playerinfo{
+    position: relative;
+    width: 25%;
+    height: 95%;
+    display: flex;
+    z-index: -1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(190, 190, 190),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+.playerinfo img{
+    width: 60%;
+    height: 40%;
+}
+.playername{
+    width: 100%;
+    font-size: 15px;
+    font-weight: 800;
+    font-style: italic;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.startbid{
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+.playerrole , .playerage{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.playerdetail{
+    height: 60%;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.bidinfo{
+    width: 50%;
+    height: 90%;
+    border-radius: 10px;
+    transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.45);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.bidpoints p{
+    font-size: 60px;
+    font-weight: 800;
+    position: relative;
+
+}
+
+.bidpoints{
+    text-align: center;
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3C896D;
+    position: relative;
+
+}
+
+.bidteam{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+
+}
+
+.bidteamimg{
+    height: 80%;
+    width: 50%;
+    border-radius: 15px;
+    margin-left: 10px;
+}
+
+.teamdetail{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.teamname{
+    width: 100%;
+    font-size: 30px;
+    font-weight: 600;
+    font-style: italic;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.remaingamout{
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    position: relative;
+
+}
+.playerrole , .playerage{
+    font-size: 15px;
+    font-weight: 600;
+}
+.activebutton{
+    background-color:#bdc6c384 !important;
+}
+
+.radio{
+    width: 60%;
+    display: flex;
+    background-color: #3c896d09;
+    margin: auto;
+    height: 60vh;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.category{
+    display: flex;
+    height: 65vh;
+    width: 20%;
+    border-right-style:inset ;
+    overflow-y: scroll;
+    flex-direction: column;
+    align-items: center;
+}
+
+.panelcenter{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.radiobutton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 50px;
+    background-color: #3c896d0c;
+    transition-duration: 2s;
+}
+
+.buttonGroup{
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+    gap: 40px;
+}
+
+.selectedButton , .button:hover{
+    background-color: #3c896dc5;
+    color: white;
+}
+
+.button , .selectedButton{
+    font-size: 15px;
+    font-weight: 500;
+    width: 70%;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+
+@media only screen and (max-width:885px){
+    .bidplayer{
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+        padding-bottom: 10px;
+    }
+
+    .playerinfo{
+        width: 60%;
+        height: auto;
+    }
+    .bidinfo{
+        width: auto;
+        height: auto;
+    }
+    .playerdetail{
+        height: auto;
+    }
+    .bidcontainer{
+        flex-direction: column;
+        height: auto;
+        gap: 30px;
+        padding-bottom: 20px;
+    }
+    .playersearch{
+        width: 100%;
+    }
+    .teamcontainer{
+        width: 100%;
+    }
+    .bidbutton , .bidbutton button{
+        width: 80%;
+        height: auto;
+        gap: 20px;
+    }
+    .auctionbid{
+        height: auto;
+    }
+}

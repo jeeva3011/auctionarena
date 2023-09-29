@@ -1,0 +1,22 @@
+.footer{
+    width: 100%;
+    background-color: #3c896d;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer p{
+    font-size: 15px;
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Borel', cursive;
+}
+
+@media only screen and (max-width:430px) {
+    .footer p{
+        font-size: 10px;
+    }
+
+}

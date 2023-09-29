@@ -1,0 +1,70 @@
+.detailscontainer{
+    width: 100%;
+    overflow: auto;
+    
+}
+
+.auctionnav{
+    background-color: #00000017;
+    width: 90%;
+    height: 5%;
+    margin: 10px auto auto auto;
+    padding: 10px;
+}
+
+.navlinks{
+    margin: auto;
+}
+.navlinks a{
+    color: blue;
+}
+.detailgrid{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 10px auto auto auto;
+    padding: 10px;
+    gap: 20px;
+}
+
+.details{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    gap: 20px;
+    padding: 5px;
+    
+}
+
+.detaillinks{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    gap: 20px;
+    padding: 5px;
+}
+
+.detailslabel{
+    transition: 0.5 ease-in;
+    border-bottom: solid 1px #3c896d52;
+}
+
+.panelbutton{
+    border-radius: 7px;
+    border: solid 1px #000;
+    width: 40%;
+    height: 60px;
+    transition: 0.6s ease-in;
+}
+
+.panelbutton:hover{
+    box-shadow: inset 300px 0 0 0 #000000;
+    color: #ffffff;
+}
+
+.detailcontact{
+    width: 90%;
+    margin: auto;
+    border-top: solid 1px #000;
+    padding: 5px;
+}

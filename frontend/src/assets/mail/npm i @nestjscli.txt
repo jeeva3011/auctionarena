@@ -1,0 +1,30 @@
+npm i @nestjs/cli
+nest new nestjs-project
+code nestjs-project
+
+user entity 
+
+id 
+fullname
+phoneNumber
+createdAt
+updatedAt
+deletedAt
+
+
+post entity
+
+id 
+postName
+postOrderNumber
+createdAt
+updatedAt
+deletedAt
+
+
+user ---> post1,  post2
+
+getAllusers
+getAllpost
+deleteUser
+deletePostById

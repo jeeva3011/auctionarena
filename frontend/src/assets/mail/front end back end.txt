@@ -1,0 +1,7 @@
+front end back end
+aws s3 bugcet ecs
+code pipline 
+private rep
+sonar
+typeorm grapgql
+logs

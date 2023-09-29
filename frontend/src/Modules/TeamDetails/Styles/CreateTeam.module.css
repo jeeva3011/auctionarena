@@ -1,0 +1,86 @@
+.CreateTeamContainer{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;   
+}
+
+.validate{
+    font-size: small;
+    color: red;
+}
+.formHeader{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin: 10px;
+    padding-inline-end: 10px;
+    background-color: #00000017;
+
+    
+}
+.formHeader h3{
+    margin-left: 10px;
+}
+
+
+.formContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0 5px #000;
+    border-radius: 10px;
+    width: 90%;
+    padding: 20px;
+}
+.imageUpload{
+    width: 200px;
+    height: 200px;
+}
+.imageUploadContainer{
+    width: 50%;
+
+}
+.imageUpload:hover{
+    content: url('../../../assets/up.svg');
+    cursor: pointer;
+}
+.disableHover:hover{
+    content: none;
+    cursor:not-allowed;
+}
+.formControl{
+    width: 50%;
+    margin-left: 10px;
+}
+.inputs{
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    flex-direction: column;
+}
+.formControl input{
+    height: 5vh;
+}
+.formControl select{
+    height: 6vh;
+}
+.formControl input:focus,
+.formControl select:focus{
+  outline: none;
+}
+.addTeamBtn{
+    float: right;
+    width: 30%;
+    margin: auto;
+    height: 6vh;
+    background-color: #fff;
+    border: 1px #51be94 solid;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.addTeamBtn:hover{
+    box-shadow: 0px 0px 10px 5px #63d3a6;
+}
+

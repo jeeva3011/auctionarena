@@ -1,0 +1,33 @@
+html{
+    scroll-behavior: smooth;
+}
+.home-page{
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 40px;
+    justify-content: space-around;
+    background-color: rgba(185, 179, 179, 0.171);
+    /* overflow: scroll; */
+}
+
+.home-header{
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(185, 179, 179, 0.171); 
+}
+
+.LoginContainer{
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headroom{
+    width: 100% !important;
+}

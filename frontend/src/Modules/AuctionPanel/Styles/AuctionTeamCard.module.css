@@ -1,0 +1,44 @@
+.cardContainer {
+  width: 40%;
+  height: 21vh;
+  border: 1px #000 solid;
+  display: flex;
+  color: #000;
+  text-transform: uppercase;
+  box-shadow: 0 2px 5px 2px #3c896d;
+  border-radius: 10px;
+  padding: 5px;
+  transition: .5s;
+}
+.cardContainer:hover{
+    transform: scale(1.02);
+}
+.teamProfile {
+  width: 30%;
+  height: 20vh;
+}
+.teamdetails{
+    padding-left: 20px;
+}
+
+@media only screen and (max-width:850px){
+    .context{
+        flex-direction: column;
+       
+    }
+     h2{
+        font-size: 20px;
+    }
+    .cardContainer{
+        line-height: 0px;
+        width: 40%;
+    }
+    .teamProfile{
+        width: 40%;
+    }
+}
+@media only screen and (max-width:500px){
+.cardContainer{
+    width: 80%;
+}
+}

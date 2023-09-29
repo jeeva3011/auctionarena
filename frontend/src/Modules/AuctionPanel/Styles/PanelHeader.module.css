@@ -1,0 +1,114 @@
+.panelheader {
+  height: 10vh;
+  width: 100%;
+  background-color: #3c896d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  /* padding-left: 15px; */
+}
+
+.header {
+  text-align: center;
+  line-height: 2px;
+  padding: 10px;
+  color: #3c896d;
+  text-transform: uppercase;
+}
+.header p {
+  letter-spacing: -2px;
+}
+
+.auctionName {
+  font-size: 40px;
+  text-shadow: 2px 2px 8px #b3b3b3;
+  transition: 0.5s;
+}
+
+.logo {
+  padding-left: 20px;
+  height: 5vh;
+  width: 80%;
+}
+
+.headercontainer {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.headercontainers {
+  height: 30vh;
+  width: 150px;
+  position: absolute;
+  right: 0px;
+  top: 70px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #3c896d;
+}
+
+.headercontainer a,
+.headercontainers a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
+
+.menubar {
+  display: none;
+}
+
+.menu{
+  border: none;
+  outline: none;
+  background: none;
+  color: white;
+  font-size: 15px;
+  height:40px;
+  background-color: #3c896d;
+  appearance: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 850px) {
+  .headercontainer {
+    display: none;
+  }
+  .menubar {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    right: 25px;
+    color: white;
+    top: 5px;
+    font-size: 30px;
+  }
+  .logo-container img {
+    position: absolute;
+    left: 20px;
+    height: 25px;
+    width: 180px;
+  }
+  .headercontainers {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .logo {
+    height: 20px;
+    padding: 10px;
+  }
+  .menubar {
+    font-size: 24px;
+    align-items: center;
+  }
+  .auctionName {
+    font-size: 30px;
+  }
+}

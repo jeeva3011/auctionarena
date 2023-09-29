@@ -1,0 +1,49 @@
+.cardContainer {
+    background-color: #eeea81;
+    position: relative;
+    width: 240px;
+    height: 15vh;
+    margin-top: 15px;
+    font-size: 20px;
+    border: 1px black solid;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+   padding-right: 10px;
+   padding-left: 10px;
+  }
+  .cardContainer:hover {
+    transition: all 0.3s ease-out;
+    transform: scale(1.02);
+    box-shadow: 0 2px 5px 2px #3c896d;
+  }
+  .cardContainer h4 {
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  
+  .auctionImage{
+    width: 70px;
+    height: 70px;
+    margin: 10px 0 10px 0;
+  }
+  .auctionName{
+    text-transform: capitalize;
+    font-weight: normal;
+  }
+  .auctionDate{
+   font-size: 16px;
+  }
+  @media only screen and (max-width: 500px) {
+    .cardContainer{
+      width: 80%;
+            
+    }
+  }
+  
+  
+  

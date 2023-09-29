@@ -1,0 +1,6 @@
+projectKey=auctionarena-frontend
+serverUrl=http://quality.tringbytes.com
+serverVersion=8.9.10.61524
+dashboardUrl=http://quality.tringbytes.com/dashboard?id=auctionarena-frontend
+ceTaskId=AYrbm3-YGqP0gpMaeXGF
+ceTaskUrl=http://quality.tringbytes.com/api/ce/task?id=AYrbm3-YGqP0gpMaeXGF
